@@ -55,4 +55,26 @@ OK
 (integer) 1
 127.0.0.1:6379> GEODIST geo_locations
 (error) ERR wrong number of arguments for 'geodist' command
+127.0.0.1:6379> HSET students student1 56.9
+(integer) 1
+127.0.0.1:6379> HSET students student2 67.1
+(integer) 1
+127.0.0.1:6379> HSET students student3 35.4
+(integer) 1
+127.0.0.1:6379> HGETALL students
+1) "student1"
+2) "56.9"
+3) "student2"
+4) "67.1"
+5) "student3"
+6) "35.4"
+127.0.0.1:6379> HSET students student1 27.8
+(integer) 0
+127.0.0.1:6379> HGETALL students
+1) "student1"
+2) "27.8"
+3) "student2"
+4) "67.1"
+5) "student3"
+6) "35.4"
 127.0.0.1:6379>
