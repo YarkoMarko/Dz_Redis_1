@@ -24,4 +24,9 @@ OK
 (error) ERR wrong number of arguments for 'hmset' command
 127.0.0.1:6379> HMSET user:1 name "Alice" age 25
 OK
+127.0.0.1:6379> HGETALL user:1
+1) "name"
+2) "Alice"
+3) "age"
+4) "25"
 127.0.0.1:6379>
