@@ -77,4 +77,7 @@ OK
 4) "67.1"
 5) "student3"
 6) "35.4"
-127.0.0.1:6379>
+127.0.0.1:6379> PFADD unique_users user1 user2 user3 user4 user5
+(integer) 1
+127.0.0.1:6379> PFCOUNT unique_users
+(integer) 5
