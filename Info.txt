@@ -10,4 +10,6 @@ OK
 1) "orange"
 2) "banana"
 3) "apple"
-127.0.0.1:6379>>
+127.0.0.1:6379> SADD user:tags "red" "green" "blue"
+(integer) 3
+127.0.0.1:6379>
