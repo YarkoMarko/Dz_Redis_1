@@ -4,4 +4,6 @@ root@DESKTOP-HQK2GIJ:~# redis-cli
 OK
 127.0.0.1:6379> GET user:name
 "John Doe"
+127.0.0.1:6379> LPUSH user:fruits "apple" "banana" "orange"
+(integer) 3
 127.0.0.1:6379>
