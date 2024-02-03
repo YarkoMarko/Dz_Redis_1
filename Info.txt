@@ -16,4 +16,6 @@ OK
 1) "red"
 2) "green"
 3) "blue"
+127.0.0.1:6379> DEL user:name
+(integer) 1
 127.0.0.1:6379>
