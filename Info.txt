@@ -90,4 +90,7 @@ QUEUED
 127.0.0.1:6379(TX)> EXEC
 1) (integer) 2
 2) (integer) 2
-127.0.0.1:6379>
+127.0.0.1:6379> SHUTDOWN SAVE
+not connected>
+not connected>
+not connected>
