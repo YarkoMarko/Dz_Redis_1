@@ -6,4 +6,8 @@ OK
 "John Doe"
 127.0.0.1:6379> LPUSH user:fruits "apple" "banana" "orange"
 (integer) 3
-127.0.0.1:6379>
+127.0.0.1:6379> LRANGE user:fruits 0 3
+1) "orange"
+2) "banana"
+3) "apple"
+127.0.0.1:6379>>
