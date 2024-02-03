@@ -45,4 +45,14 @@ OK
 (nil)
 127.0.0.1:6379> GET user:tags
 (nil)
+127.0.0.1:6379> GEOADD geo_locations 49.84560088030742, 24.02608206573951 "Lviv Theatre of Opera and Ballet"
+(error) ERR value is not a valid float
+127.0.0.1:6379> GEOADD geo_locations 49.8456 24.0260 "Lviv Theatre of Opera and Ballet"
+(integer) 1
+127.0.0.1:6379> GEOADD geo_locations 49.8491 24.0391 "High Castle"
+(integer) 1
+127.0.0.1:6379> GEOADD geo_locations 49.7775 24.0287 "Arena Lviv"
+(integer) 1
+127.0.0.1:6379> GEODIST geo_locations
+(error) ERR wrong number of arguments for 'geodist' command
 127.0.0.1:6379>
