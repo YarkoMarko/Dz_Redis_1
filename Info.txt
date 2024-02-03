@@ -12,4 +12,8 @@ OK
 3) "apple"
 127.0.0.1:6379> SADD user:tags "red" "green" "blue"
 (integer) 3
+127.0.0.1:6379> SMEMBERS user:tags
+1) "red"
+2) "green"
+3) "blue"
 127.0.0.1:6379>
