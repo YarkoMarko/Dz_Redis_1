@@ -2,4 +2,6 @@ root@DESKTOP-HQK2GIJ:~# sudo service redis-server start
 root@DESKTOP-HQK2GIJ:~# redis-cli
 127.0.0.1:6379> SET user:name "John Doe"
 OK
+127.0.0.1:6379> GET user:name
+"John Doe"
 127.0.0.1:6379>
